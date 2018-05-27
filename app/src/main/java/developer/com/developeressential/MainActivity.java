@@ -44,6 +44,12 @@ public class MainActivity extends Activity {
                 });
     }
 
+    public void recognizeMe(View view) {
+        Intent intent = new Intent(MainActivity.this, RecognizeMeApp.class);
+        startActivity(intent);
+    }
+
+
     public void openGoogleMaps(View view) {
         Intent intent = new Intent(MainActivity.this, MapsActivity.class);
         startActivity(intent);

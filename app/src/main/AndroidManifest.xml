@@ -36,14 +36,32 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-		<meta-data
-			android:name="net.hockeyapp.android.appIdentifier"
- 			android:value="${HOCKEYAPP_APP_ID}" />
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
 
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".CameraActivity" />
+        <activity
+            android:name=".RecognizeMeApp"
+            android:label="@string/title_activity_recognize_me_app" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".View_you"
+            android:label="@string/title_activity_view_you" />
+        <activity
+            android:name=".Summary"
+            android:label="@string/title_activity_summary" />
+        <activity
+            android:name=".UploadToDB"
+            android:label="@string/title_activity_upload_to_db" />
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details"></activity>
     </application>
 
 </manifest>

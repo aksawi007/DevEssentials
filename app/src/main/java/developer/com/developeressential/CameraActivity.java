@@ -19,11 +19,12 @@ public class CameraActivity extends Activity {
         startActivityForResult(cameraIntent, CAMERA_REQUEST);
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == CAMERA_REQUEST) {
-            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            Bitmap photo = (Bitmap) intent.getExtras().get("data");
             imageView = (ImageView) this.findViewById(R.id.imageView);
             imageView.setImageBitmap(photo);
+            intent.putExtra("personPics", photo);
         }
     }
 }

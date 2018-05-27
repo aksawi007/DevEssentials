@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:text="Name:"/>
+
+    <EditText
+        android:id="@+id/per_name_reg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="textPersonName" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text="Age    :"/>
+
+    <EditText
+        android:id="@+id/per_age_reg"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Age"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/attach_pics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:onClick="openRegCamera"
+        android:text="Attach Pics" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="Submit"
+        android:onClick="submit"/>
+
+    <ImageView
+        android:id="@+id/imageView_reg"
+        android:layout_width="180dp"
+        android:layout_height="293dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/ic_launcher" />
+</RelativeLayout>

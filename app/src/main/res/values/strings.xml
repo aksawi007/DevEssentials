@@ -3,4 +3,10 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_location_permission">Location Permission</string>
     <string name="text_location_permission">This app need your location information</string>
+    <string name="title_activity_recognize_me_app">RecognizeMeApp</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_view_you">View_you</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="title_activity_upload_to_db">UploadToDB</string>
+    <string name="title_activity_details">Details</string>
 </resources>
